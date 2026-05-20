@@ -20,7 +20,6 @@ spec:
           value: "0"
       secrets:
         - name: rhdh-secrets
-    replicas: 1
     route:
       enabled: true
       host: rhdh.apps.cluster-fntzh.dynamic2.redhatworkshops.io
