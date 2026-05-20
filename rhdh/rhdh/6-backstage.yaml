@@ -10,7 +10,6 @@ spec:
   database:
     enableLocalDb: true
   application:
-    dynamicPluginsConfigMapName: dynamic-plugins-rhdh
     appConfig:
       configMaps:
         - name: app-config-rhdh
@@ -20,7 +19,8 @@ spec:
         - name: NODE_TLS_REJECT_UNAUTHORIZED
           value: "0"
       secrets:
-        - name: rhdh-secrets            
+        - name: rhdh-secrets
+    replicas: 1
     route:
       enabled: true
       host: rhdh.apps.cluster-fntzh.dynamic2.redhatworkshops.io
