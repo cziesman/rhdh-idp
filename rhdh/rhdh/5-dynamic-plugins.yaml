@@ -19,4 +19,7 @@ data:
         disabled: false
       - package: './dynamic-plugins/dist/backstage-plugin-kubernetes-backend-dynamic'
         disabled: false
-...
+      - package: './dynamic-plugins/dist/backstage-community-plugin-redhat-argocd'
+        disabled: false
+      - package: './dynamic-plugins/dist/backstage-community-plugin-scaffolder-backend-module-argocd-dynamic'
+        disabled: false...
